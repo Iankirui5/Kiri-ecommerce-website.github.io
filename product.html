@@ -1,0 +1,136 @@
+<DOCTYPE! HTML>
+    <Html5>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="device-width, initial-scale=1">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>All Products - KiriStore</title>
+            <link rel="stylesheet" href="index.css">
+            <meta name="description" content="120">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+            <script>
+                function addToCart() {
+                    alert("Item added to cart!");
+                 }
+             </script>
+        </head>
+        <body>
+            <div class="header">
+                    <div class="container">
+                        <div class="navbar">
+                            <div class="logo">
+                                <a href="KIRI.html"><img src="Kiri/kiri.jfif" width="200px" height="40px"></a>
+                            </div>
+                            <nav>
+
+                                <ul id="MenuItems">
+                                    <li><a href="KIRI.html">Home</a></li>
+                                    <li><a href="product.html">Products</a></li>
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="Account.html">Account</a></li>
+                                    <li class="cart">
+                                        <a href="cart.html">
+                                            <ion-icon name="basket"></ion-icon>cart<span>0</span>
+                                    </a></li>
+                                </ul>
+                            </nav>
+                           
+                            <img src="Kiri/menu.png" class="menu-icon"
+                                 onclick="menutoggle()">
+                        </div>
+                    </div>
+                 </div>
+            
+                 <div class="small container">
+                <div class="row row-2">
+                    <h2>All Products</h2>
+                    <select>
+                        <option>Default Shorting</option>
+                        <option>Short br Price</option>
+                        <option> Short by Popularity</option>
+                        <option>Short by Size</option>
+                        <option>Short by Sale</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                            <img src="Kiri/mens1.jfif">
+                            <h3>Mens Wear</h3>
+                            <h3>ksh 3500.00</h3>
+                            <a href="cart.html"><a class="btn add-cart cart1"  href="#" onclick="addToCart()">Add Cart</a>
+                   </div>
+                    <div class="col-4">
+
+                        <img src="Kiri/kiri1.jpg">
+                        <h3>House Decor</h3>
+                        <h3>ksh 1300.00</h3>
+                       <a class="btn add-cart cart2" href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                    <div class="col-4">
+
+                        <img src="Kiri/table1.jfif">
+                        <h3>African Crafted Tables</h3>
+                        <h3>ksh 1800.00</h3>
+                        <a class="btn add-cart cart3" href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="Kiri/shoes1.jfif">
+                        <h3>Mens Footwear</h3>
+                        <h3>ksh 2500.00</h3>
+                       <a class="btn add-cart cart4" href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="Kiri/cloth2.jfif">
+                        <h3>Ladies Wear</h3>
+                        <h3>ksh 2800.00</h3>
+                        <a class="btn add-cart cart5" href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="Kiri/jewelry1.jfif">
+                        <h3>Jewelry</h3>
+                        <h3>ksh 1300.00</h3>
+                        <a class="btn add-cart cart6" href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="Kiri/ladies footwear.jfif">
+                        <h3>Ladies Footwear</h3>
+                        <h3>ksh 500.00</h3>
+                       <a class="btn add-cart cart7" href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                    <div class="col-4">
+                        <img src="Kiri/kitenge2.jfif">
+                        <h3>Kitenge</h3>
+                        <h3>ksh 2000.00</h3>
+                       <a class="btn add-cart cart8 href="#" onclick="addToCart()">Add Cart</a>
+                    </div>
+                </div>
+                <div class="page-btn">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>&#8594;</span>
+                </div>
+                </div>
+
+               <!----------js for toggle menu------->
+              <script>
+                var MenuItems = document.getElementById("MenuItems");
+
+                MenuItems.style.maxHeight = "0px";
+
+                function menutoggle() {
+                    if (MenuItems.style.maxHeight == "0px") {
+                        MenuItems.style.maxHeight = "200px";
+                    }
+                    else {
+                        MenuItems.style.maxHeight = "0px";
+                    }
+                }
+            </script>
+            <script src="main.js"></script>
+            <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+        </body>
+    </Html5>
